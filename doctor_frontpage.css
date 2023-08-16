@@ -1,0 +1,107 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS';
+  line-height: 1.6;
+}
+
+/* Header styles (customize as needed) */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main frontpage styles */
+.frontpage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.frontpage h1 {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles (customize as needed) */
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  color: blue;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to arrange items side by side */
+}
+
+nav ul li {
+  /* Change display property to inline-block */
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+  

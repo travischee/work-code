@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Appointment</title>
+  <link rel="stylesheet" href="appointment_bookingform.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Frontpage</a></li>
+        <li><a href="appointment_bookingform.html">Book Appointment</a></li>
+        <li><a href="consultation_serviceswithprice.html">Services</a></li>
+        <li><a href="log_in_with_css.html">Login</a></li>
+        <li><a href="sign_up_with_css.html">Sign Up</a></li>
+        <li><a href="payment_with_css.html">Payment</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="appointment-form">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+      <div class="input-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="input-group">
+        <label for="ConsultationType">Consultation type:</label>
+        <select id="ConsultationType">
+          <option value="physical">Physical</option>
+          <option value="online">Online</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="medicationType">Medication type:</label>
+        <select id="medicationType">
+          <option value="physical">Yes</option>
+          <option value="online">No</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="date" id="appointmentDate" required />
+      </div>
+      <div class="input-group">
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="time" id="appointmentTime" required />
+      </div>
+      <div class="input-group">
+        <label for="additionalMessage">Additional Message:</label>
+        <textarea id="additionalMessage" rows="4"></textarea>
+      </div>
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+
+  <script src="appointment bookingform.js"></script>
+</body>
+<footer>
+  <p>&copy; 2023 Your Appointment Booking Website. All rights reserved.</p>
+</footer>
+</html>

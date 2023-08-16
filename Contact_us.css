@@ -1,0 +1,134 @@
+body {
+  font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS';
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS';
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    font-family: 'Trebuchet MS';
+  }
+
+/* Additional style for email and phone number links */
+.contact-section p {
+    text-align: center;
+  }
+  
+  .contact-section a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  body {
+    background-color: #f2f2f2;
+    font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+
+  nav ul li a:hover {
+    background-color: #0056b3;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Trebuchet MS';
+  }
+
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: grey;
+    padding: 10px;
+    font-family: 'Trebuchet MS';
+    }

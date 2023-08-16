@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Login</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Trebuchet MS';
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin: 0 auto;
+      font-family: 'Trebuchet MS';
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #0056b3;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Trebuchet MS';
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Trebuchet MS';
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Trebuchet MS';
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Trebuchet MS';
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    .create-account {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .create-account a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .error {
+      color: red;
+    }
+
+    footer {
+    text-align: center;
+    margin-top: 20px;
+    color: grey;
+    padding: 10px;
+    font-family: 'Trebuchet MS';
+    }
+
+    body {
+    padding-bottom: 60px; 
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+      <li><a href="index.html">Frontpage</a></li>
+      <li><a href="appointment_bookingform.html">Book Appointment</a></li>
+      <li><a href="consultation_serviceswithprice.html">Services</a></li>
+      <li><a href="log_in_with_css.html">Login</a></li>
+      <li><a href="sign_up_with_css.html">Sign Up</a></li>
+      <li><a href="payment_with_css.html">Payment</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="logo">
+      <img src="doctor.png" alt="Doctor Logo">
+    </div>
+    <h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+    <div class="create-account">
+      Don't have an account? <a href="sign up with css.html">Create one</a>.
+    </div>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('login-form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      // Reset previous error messages
+      const errorMessages = loginForm.getElementsByClassName('error');
+      for (let i = 0; i < errorMessages.length; i++) {
+        errorMessages[i].remove();
+      }
+
+      // Validate inputs
+      let isValid = true;
+
+      if (usernameInput.value.trim() === '') {
+        showError(usernameInput, 'Username is required');
+        isValid = false;
+      }
+
+      if (passwordInput.value.trim() === '') {
+        showError(passwordInput, 'Password is required');
+        isValid = false;
+      }
+
+      if (isValid) {
+        // Perform actual login authentication here
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        // Dummy login validation
+        if (username === 'admin' && password === 'password') {
+          alert('Login successful!');
+          // Redirect to a dashboard or another page
+        } else {
+          showError(passwordInput, 'Invalid username or password');
+        }
+      }
+    });
+
+    function showError(input, message) {
+      input.classList.add('error');
+      const errorMessage = document.createElement('span');
+      errorMessage.className = 'error';
+      errorMessage.textContent = message;
+      input.parentNode.appendChild(errorMessage);
+    }
+  </script>
+</body>
+<footer>
+  <p>&copy; 2023 Your Appointment Booking Website. All rights reserved.</p>
+</footer>
+</html>
